@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/loginCardRadius"
+    android:elevation="5dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="@dimen/loginViewsMargin"
+    android:layout_marginBottom="@dimen/loginViewsMargin"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        style="@style/linearParent"
+        android:layout_gravity="center"
+        android:padding="@dimen/loginViewsMargin">
+
+        <TextView
+            style="@style/headerTextPrimary"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:fontFamily="monospace"
+            android:text="Register" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/usernameTextInputLayout"
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top"
+            app:helperText=""
+            app:helperTextTextColor="#FF0000">
+            <EditText
+                android:id="@+id/username"
+                style="@style/modifiedEditText"
+                android:hint="Name"
+                android:inputType="text"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/phoneTextInputLayout"
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top"
+            app:helperText=""
+            app:helperTextTextColor="#FF0000">
+            <EditText
+                android:id="@+id/phone"
+                style="@style/modifiedEditText"
+                android:inputType="text"
+                android:maxLines="1"
+                android:hint="Mobile Number"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailTextInputLayout"
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top"
+            app:helperText=""
+            app:helperTextTextColor="#FF0000">
+            <EditText
+                android:id="@+id/email"
+                style="@style/modifiedEditText"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:hint="@string/login_email_hint"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/genderInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:helperText=""
+            app:helperTextTextColor="#FF0000">
+
+            <AutoCompleteTextView
+                android:id="@+id/gender"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:backgroundTint="#00FFFFFF"
+                android:hint="Gender"
+                android:inputType="none"
+                android:paddingStart="16dp"
+                android:paddingTop="20dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="20dp"
+                android:textSize="12sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/submitter"
+            style="@style/registrationButton"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="Register"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

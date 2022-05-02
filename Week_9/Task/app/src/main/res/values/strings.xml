@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Blog Post(s)</string>
+    <string name="add_post">Add post</string>
+    <string name="post_item_title">%1$s</string>
+    <string name="post_item_body">%1$s</string>
+    <string name="post_comment_name">%1$s</string>
+    <string name="post_comment_email">%1$s</string>
+    <string name="post_comment_body">%1$s</string>
+    <string name="comments_count">Comments (%1$d)</string>
+</resources>

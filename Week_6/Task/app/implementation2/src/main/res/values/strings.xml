@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Contacts</string>
+    <string name="contact_list_item_number_placeholder">%1$d</string>
+    <string name="contact_list_item_name_placeholder">%1$d</string>
+    <string name="allow">Allow</string>
+    <string name="allow_contact_permission_to_view_contact_s">Allow contact permission to view contact(s)</string>
+</resources>

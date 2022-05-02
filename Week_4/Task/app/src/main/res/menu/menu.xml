@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeNav"
+        android:visible="true"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home"/>
+
+    <item
+        android:id="@+id/peopleNav"
+        android:visible="true"
+        android:icon="@drawable/ic_people"
+        android:title="@string/people"/>
+
+    <item
+        android:id="@+id/giftsNav"
+        android:visible="true"
+        android:icon="@drawable/ic_gifts"
+        android:title="@string/gifts"/>
+</menu>
